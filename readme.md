@@ -1,6 +1,6 @@
 # Aplicación bancaria
 
-Aplicación creada en Java 14 con Eclipse 4.18.0 y Tomcat 9, sobre una base de datos SqlServer, como proyecto final del Certificado de Profesionalidad Nivel III impartido por Academia Nowe.
+Aplicación creada en Java 14 con Eclipse 4.18.0 y Tomcat 9, sobre una base de datos SqlServer, como proyecto final del Certificado de Profesionalidad Nivel III impartido por Academia Nowe.  
 En el caso de que utilices Mac, recomiendo utilizar Docker para montar una unidad virtual que tenga la bbdd de SQLServer; este proyecto así lo hace.
 
 ## Instrucciones

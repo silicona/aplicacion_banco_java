@@ -1,0 +1,393 @@
+@charset "UTF-8";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+
+body.index {
+	background:
+		linear-gradient(135deg, #708090 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
+		linear-gradient(225deg, #708090 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
+	background-color:#708090;
+	background-size: 64px 128px;
+}
+
+/* fondos extraidos de http://redeando.blogspot.com/2012/12/texturas-con-css3-para-cambiar-el-fondo.html */
+body.visualizar_saldo {
+	background:
+		radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 9%, hsla(0, 100%, 20%, 0) 9%) 0 0,
+		radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 8%, hsla(0, 100%, 20%, 0) 10%) 50px 50px,
+		radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 50px 0,
+		radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 0 50px,
+		radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 50px 0,
+		radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 100px 50px,
+		radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 0 0,
+		radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 50px 50px,
+		linear-gradient(45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0,
+		linear-gradient(-45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0;
+	background-color: #300; 
+	background-size: 100px 100px;
+}
+
+body.gestion_cdt {
+	background:
+		linear-gradient(324deg, #232927 4%,   transparent 4%) -70px 43px,
+		linear-gradient( 36deg, #232927 4%,   transparent 4%) 30px 43px,
+		linear-gradient( 72deg, #e3d7bf 8.5%, transparent 8.5%) 30px 43px,
+		linear-gradient(288deg, #e3d7bf 8.5%, transparent 8.5%) -70px 43px,
+		linear-gradient(216deg, #e3d7bf 7.5%, transparent 7.5%) -70px 23px,
+		linear-gradient(144deg, #e3d7bf 7.5%, transparent 7.5%) 30px 23px,
+		
+		linear-gradient(324deg, #232927 4%,   transparent 4%) -20px 93px,
+		linear-gradient( 36deg, #232927 4%,   transparent 4%) 80px 93px,
+		linear-gradient( 72deg, #e3d7bf 8.5%, transparent 8.5%) 80px 93px,
+		linear-gradient(288deg, #e3d7bf 8.5%, transparent 8.5%) -20px 93px,
+		linear-gradient(216deg, #e3d7bf 7.5%, transparent 7.5%) -20px 73px,
+		linear-gradient(144deg, #e3d7bf 7.5%, transparent 7.5%) 80px 73px;
+	background-color: #232927;
+	background-size: 100px 100px;
+}
+
+body.ingresar_retirar {
+	background: 
+		radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(187,0,51,0) 27%),
+		radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(187,0,51,0) 27%),
+		radial-gradient(circle closest-side at 40% 22%, #d35 45%, rgba(221,51,85,0) 46%),
+		radial-gradient(circle closest-side at 60% 22%, #d35 45%, rgba(221,51,85,0) 46%),
+		radial-gradient(circle closest-side at 50% 35%, #d35 30%, rgba(221,51,85,0) 31%),
+		
+		radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(187,0,51,0) 27%) 50px 50px,
+		radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(187,0,51,0) 27%) 50px 50px,
+		radial-gradient(circle closest-side at 40% 22%, #d35 45%, rgba(221,51,85,0) 46%) 50px 50px,
+		radial-gradient(circle closest-side at 60% 22%, #d35 45%, rgba(221,51,85,0) 46%) 50px 50px,
+		radial-gradient(circle closest-side at 50% 35%, #d35 30%, rgba(221,51,85,0) 31%) 50px 50px;
+	background-color:#b03;
+	background-size:100px 100px;
+}
+
+body.simulacion {
+	background-color:#269;
+	background-image:
+		linear-gradient(white 2px, transparent 2px),
+		linear-gradient(90deg, white 2px, transparent 2px),
+		linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
+		linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
+	background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
+	background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}
+
+body.acceso {
+	background-image: url("../imagenes/rivendel.jpg");
+	background-size: cover;
+}
+
+header {
+	background: #FFFFFF;
+}
+
+header h2 {
+	padding: 1ex;
+	text-align: center;
+	margin: 0;
+}
+
+header a {
+	text-decoration: none;
+	color: #000000;
+}
+
+header img {
+	width: 100px;
+	vertical-align: middle;
+}
+
+nav {
+	background-color: #000000;
+	text-align: center;
+}
+
+nav ul {
+	margin: 0 auto;
+	padding: 0;
+	display: inline-block;
+}
+
+nav ul::after {
+	content: "";
+	display: inline-block;
+	clear: both;
+}
+
+nav li {
+	float: left;
+	margin: 0 1em;
+}
+
+nav a {
+	text-decoration: none;
+	font-size: 1.2em;
+	display: block;
+	padding: 1ex .6ex;
+	color: #FFFFFF;
+}
+
+.oculto {
+	display: none;
+}
+
+.contenido {
+    margin: 0 auto;
+    width: 800px;
+    background: #EAEAEA;
+    padding: 1em;
+    padding-bottom: 2em;
+}
+
+
+.contenido.visualizar_saldo,
+.contenido.gestion_cdt,
+.contenido.ingresar_retirar,
+.contenido.simulacion,
+.contenido.index { background: none; }
+
+.contenido h1 {
+	text-align: center;
+	background: #EAEAEA;
+	font-family: 'Akaya Telivigala', cursive;
+	border-radius: 15px;
+}
+
+.div_volver {
+	padding: 1em;
+	text-align: right;
+}
+
+.volver_link {
+	padding: .4em .6em;
+	border-radius: 10px;
+	background-color: #FFFFFF;
+}
+
+.inicio_botones ul {
+	list-style: none;
+	padding: 0;
+}
+
+.inicio_botones ul::after {
+	content: "";
+	display: block;
+	clear: both;	
+}
+
+.inicio_botones li {
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+
+.inicio_botones a {
+	font-size: 1.2em;
+	text-decoration: none;
+	color: #FFFFFF;
+	margin: .5em;
+	display: inline-block;
+	padding: 1ex 2ex;
+	border-radius: 10px;
+	background-color: #000000;
+	width: 190px;
+}
+
+.col-6 {
+	width: 50%;
+	float: left;
+	padding: 1ex;
+}
+
+form {
+	width: 70%;
+	margin: 0 auto;
+	background: #EAEAEA;
+	border-radius: 10px;
+}
+
+.visualizar_radios {
+	padding-left: 50px; 
+}
+
+.visualizar_radios label {
+	display: block;
+	padding: .5ex;
+}
+
+.visualizar_cuenta {
+	padding: 1em 0;
+}
+
+.div_boton {
+	padding-top: 1em;
+	text-align: center;
+	clear: both;
+}
+
+.div_boton input {
+	font-size: 1.2em;
+	padding: .3ex .6ex;
+	font-family: 'Akaya Telivigala', cursive; 
+	border-radius: 5px;
+	
+}
+@keyframes esperar_ajax {
+  100% {
+    transform: rotate(8640deg); 
+  }
+}
+    
+.spinner {
+	width: 100px;
+	display: block;
+	margin: 0 auto;
+	animation: esperar_ajax 60s linear 1 forwards;
+}
+
+.gestion_crear,
+.gestion_cerrar {
+	background-color: #CCCCCC;
+	padding: 1em 0;
+	border-radius: 5px;
+}
+
+.gestion_crear label,
+.gestion_cerrar label,
+.ingresar_text label,
+.ingresar_radios label {
+	display: block;
+	text-align: center;
+	margin-bottom: .5em;
+}
+
+.ingresar_radios {
+	padding-top: 1em;
+}
+
+.ingresar_radios::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.ingresar_radios label {
+	width: 50%;
+	float: left;
+}
+
+.ingresar_text {
+	margin-top: .5em;
+}
+
+.simulacion_text {
+	text-align: center;
+	padding-top: 1em;
+}
+
+.res_form {
+	min-height: 70px;
+	margin: 1ex;
+}
+
+.res_form p {
+	margin: 0;
+	padding: 1ex;
+	background-color: white;
+}
+
+body.listados,
+.div_listados {
+	background-color: #FFFFFF;	
+	background-color: #026873;
+	background-image: 
+		linear-gradient(90deg, rgba(255,255,255,.07) 50%, transparent 50%),
+		linear-gradient(90deg, rgba(255,255,255,.13) 50%, transparent 50%),
+		linear-gradient(90deg, transparent 50%, rgba(255,255,255,.17) 50%),
+		linear-gradient(90deg, transparent 50%, rgba(255,255,255,.19) 50%);
+	background-size: 13px, 29px, 37px, 53px;
+
+}
+
+.div_listados {
+	padding: 2ex;
+}
+
+.boton_recarga {
+	text-align: right;
+}
+
+.boton_recarga a {
+	text-decoration: none;
+	padding: .3ex .8ex;
+	display: inline-block;
+	border-radius: 10px;
+	background-color: #A0A0A0;
+	box-shadow: 2px 2px 0 red;
+	color: #FFFFFF;
+	font-size: 1.1em;
+}
+
+.listados h3 {
+	width: 80%;
+	margin: 2em auto 1em;
+	padding: .5em;
+	border-radius: 5px;
+	color: #FFFFFF;
+
+	background:
+		radial-gradient(black 15%, transparent 16%) 0 0,
+		radial-gradient(black 15%, transparent 16%) 8px 8px,
+		radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+		radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+	background-color:#282828;
+	background-size: 16px 16px;
+	
+	font-family: 'Libre Baskerville', serif;
+
+}
+
+.listados table {
+	padding: 2ex;
+	margin: 2ex auto;
+	border: none;
+}
+
+.listados tr:nth-of-type(even) {
+	background-color: rgba(0,0,0,.2);
+}
+
+.listados th, td {
+	padding: .3ex .5ex;
+	min-width: 70px;
+}
+
+.listados .id { 
+	width: 30px;
+	min-width: 30px;
+	text-align: center;
+}
+
+.listados .der { text-align: right; }
+
+.listados .cuentas {
+	background-color: rgb(236, 181, 189);
+}
+
+.listados .cdts {
+	background-color: rgb(186, 187, 238);
+}
+
+.div_moria {
+	text-align: center;
+}
